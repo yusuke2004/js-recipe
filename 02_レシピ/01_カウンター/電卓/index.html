@@ -1,0 +1,67 @@
+<!--
+  1. "!"と入力して、tabキーを押し、HTMLの雛形を作成する。
+  2. script要素でmain.jsを読み込む。
+-->
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>電卓</title>
+    <style>
+        body {
+            text-align: center;
+            margin: 0;
+            height: 100vh; /* 画面の高さを基準に */
+            display: flex;
+            justify-content: center; /* 横方向の中央揃え */
+            align-items: center; /* 縦方向の中央揃え */
+            background-color: #f5f5f5;
+        }
+
+        .dentaku {
+            background-color: rgb(146, 147, 148);
+            width: 300px;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        #display {
+            margin: 0;
+            font-size: 2em;
+        }
+        .operator {
+            width: 50px;
+            height: 50px;
+            font-size: 1.2em;
+        }
+        #number button {
+            margin: 5px;
+        }
+        #button button {
+            margin: 2px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class = "dentaku">
+        <h2 id = "display">0</h2>
+
+        <div id = "number"></div>
+
+        <div id = "button">
+            <button id = "clear-button" class = "operator">C</button>
+            <button id = "button0" class = "operator">0</button>
+            <button id = "equal-button" class = "operator">=</button>
+            <br>
+            <br>
+            <button id = "plus-button" class = "operator">+</button>
+            <button id = "minus-button" class = "operator">-</button>
+            <button id = "multi-button" class = "operator">x</button>
+            <button id = "divi-button" class = "operator">÷</button>
+        </div>
+        <script src = "main.js"></script>
+    </div>
+  </body>
+</html>
