@@ -1,5 +1,9 @@
 const imageElement = document.getElementById("dog-image")
+const reloadButton = document.getElementById("reload-button");
 
+reloadButton.onclick = function() {
+    window.location.reload();
+}
 // 指定したサーバーにデータを取りに行く
 fetch("https://dog.ceo/api/breeds/image/random")
   .then((res) => {
